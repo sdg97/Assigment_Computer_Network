@@ -1,0 +1,1665 @@
+----- * ARQ Network Simulator Version 1.1 * ------ 
+
+Enter number of messages to simulate: 80
+Enter packet loss probability [enter 0.0 for no loss]:0.5
+Enter packet corruption probability [0.0 for no corruption]:0.5
+Enter average time between messages from sender's layer5 [ > 0.0]:10
+Enter window size [>0]:8
+Enter retransmission timeout [> 0.0]:20
+Enter trace level:2
+Enter random seed: [>0]:2233
+
+EVENT time: 9.181188,  type: 1, fromlayer5  entity: 0
+[A_output] A invia pacchetto 0
+          TOLAYER3: packet being corrupted
+
+EVENT time: 11.710562,  type: 1, fromlayer5  entity: 0
+[A_output] A invia pacchetto 1
+
+EVENT time: 14.562120,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 0
+[B_input] B invia ack, ultimo pacchetto ackato -1
+
+
+EVENT time: 17.071139,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 1
+[B_input] il pacchetto è corretto 1
+[B_input] B invia ack, ultimo pacchetto ackato -1
+1 
+
+EVENT time: 23.490646,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 29.176305,  type: 1, fromlayer5  entity: 0
+[A_output] A invia pacchetto 2
+          TOLAYER3: packet being corrupted
+
+EVENT time: 29.181188,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 0           TOLAYER3: packet being lost
+1           TOLAYER3: packet being lost
+2           TOLAYER3: packet being corrupted
+
+
+EVENT time: 31.216773,  type: 1, fromlayer5  entity: 0
+[A_output] A invia pacchetto 3
+          TOLAYER3: packet being lost
+
+EVENT time: 31.881375,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 34.024934,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 2
+[B_input] B invia ack, ultimo pacchetto ackato -1
+          TOLAYER3: packet being lost
+1 
+
+EVENT time: 42.254982,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 2
+[B_input] B invia ack, ultimo pacchetto ackato -1
+1 
+
+EVENT time: 46.134831,  type: 1, fromlayer5  entity: 0
+[A_output] A invia pacchetto 4
+
+EVENT time: 48.403607,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 48.481796,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 4
+[B_input] il pacchetto è corretto 4
+[B_input] B invia ack, ultimo pacchetto ackato -1
+          TOLAYER3: packet being corrupted
+1 4 
+
+EVENT time: 49.181188,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 0           TOLAYER3: packet being lost
+1           TOLAYER3: packet being corrupted
+2           TOLAYER3: packet being corrupted
+3           TOLAYER3: packet being corrupted
+4 
+
+EVENT time: 52.539384,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 53.382427,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 1
+[B_input] B invia ack, ultimo pacchetto ackato -1
+          TOLAYER3: packet being lost
+1 4 
+
+EVENT time: 55.994751,  type: 1, fromlayer5  entity: 0
+[A_output] A invia pacchetto 5
+          TOLAYER3: packet being lost
+
+EVENT time: 58.933073,  type: 1, fromlayer5  entity: 0
+[A_output] A invia pacchetto 6
+          TOLAYER3: packet being corrupted
+
+EVENT time: 59.699423,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 2
+[B_input] B invia ack, ultimo pacchetto ackato -1
+          TOLAYER3: packet being lost
+1 4 
+
+EVENT time: 65.239662,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 3
+[B_input] B invia ack, ultimo pacchetto ackato -1
+1 4 
+
+EVENT time: 69.181188,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 0           TOLAYER3: packet being corrupted
+1           TOLAYER3: packet being corrupted
+2           TOLAYER3: packet being lost
+3           TOLAYER3: packet being lost
+4           TOLAYER3: packet being lost
+5           TOLAYER3: packet being lost
+6           TOLAYER3: packet being corrupted
+
+
+EVENT time: 69.251381,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 72.929991,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 4
+[B_input] il pacchetto è corretto 4
+[B_input] B invia ack, ultimo pacchetto ackato -1
+1 4 
+
+EVENT time: 76.867275,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 6
+[B_input] B invia ack, ultimo pacchetto ackato -1
+1 4 
+
+EVENT time: 76.968902,  type: 1, fromlayer5  entity: 0
+[A_output] A invia pacchetto 7
+          TOLAYER3: packet being corrupted
+
+EVENT time: 77.573992,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 78.770104,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 82.595935,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 0
+[B_input] B invia ack, ultimo pacchetto ackato -1
+1 4 
+
+EVENT time: 84.932798,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 86.713126,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 88.353710,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 1
+[B_input] B invia ack, ultimo pacchetto ackato -1
+          TOLAYER3: packet being corrupted
+1 4 
+
+EVENT time: 89.181188,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 0           TOLAYER3: packet being lost
+1           TOLAYER3: packet being lost
+2 3           TOLAYER3: packet being corrupted
+4 5           TOLAYER3: packet being lost
+6 7           TOLAYER3: packet being lost
+
+
+EVENT time: 91.162450,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 92.883175,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 6
+[B_input] B invia ack, ultimo pacchetto ackato -1
+1 4 
+
+EVENT time: 93.445143,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 94.540178,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 94.589068,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 102.116153,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 102.389325,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 7
+[B_input] B invia ack, ultimo pacchetto ackato -1
+          TOLAYER3: packet being corrupted
+1 4 
+
+EVENT time: 104.676687,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 2
+[B_input] il pacchetto è corretto 2
+[B_input] B invia ack, ultimo pacchetto ackato -1
+          TOLAYER3: packet being lost
+1 2 4 
+
+EVENT time: 105.012329,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 106.411695,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 3
+[B_input] B invia ack, ultimo pacchetto ackato -1
+          TOLAYER3: packet being lost
+1 2 4 
+
+EVENT time: 109.181188,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 0 1 2           TOLAYER3: packet being lost
+3           TOLAYER3: packet being corrupted
+4           TOLAYER3: packet being corrupted
+5           TOLAYER3: packet being lost
+6 7 
+
+EVENT time: 112.803125,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 115.669546,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 4
+[B_input] il pacchetto è corretto 4
+[B_input] B invia ack, ultimo pacchetto ackato -1
+          TOLAYER3: packet being corrupted
+1 2 4 
+
+EVENT time: 116.520280,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 120.243507,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 121.271035,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 6
+[B_input] il pacchetto è corretto 6
+[B_input] B invia ack, ultimo pacchetto ackato -1
+          TOLAYER3: packet being lost
+1 2 4 6 
+
+EVENT time: 125.757103,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 0
+[B_input] il pacchetto è corretto 0
+[B_input] B consegna il pacchetto 0
+[B_input] B consegna il pacchetto 1
+[B_input] B consegna il pacchetto 2
+[B_input] B invia ack, ultimo pacchetto ackato 2
+4 6 
+
+EVENT time: 129.181188,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 0           TOLAYER3: packet being lost
+1 2           TOLAYER3: packet being lost
+3           TOLAYER3: packet being lost
+4 5           TOLAYER3: packet being corrupted
+6           TOLAYER3: packet being corrupted
+7 
+
+EVENT time: 129.616382,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 130.294504,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 134.567248,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 1
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+4 6 
+
+EVENT time: 135.478042,  type: 2, fromlayer3  entity: 0
+[A_input] A riceve ack 2
+[A_input] pacchetti nella finestra 5
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 8
+          TOLAYER3: packet being corrupted
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 9
+          TOLAYER3: packet being lost
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 10
+[A_input] base 3, ultimo numero di sequenza della finesta 10
+
+EVENT time: 144.530168,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 3
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+4 6 
+
+EVENT time: 149.752495,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 151.181707,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 4
+[B_input] B invia ack, ultimo pacchetto ackato 2
+4 6 
+
+EVENT time: 155.478042,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 3           TOLAYER3: packet being lost
+4           TOLAYER3: packet being lost
+5           TOLAYER3: packet being lost
+6 7           TOLAYER3: packet being lost
+8           TOLAYER3: packet being lost
+9           TOLAYER3: packet being corrupted
+10           TOLAYER3: packet being lost
+
+
+EVENT time: 159.179937,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 160.178900,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 6
+[B_input] il pacchetto è corretto 6
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+4 6 
+
+EVENT time: 162.398144,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 7
+[B_input] il pacchetto è corretto 7
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+4 6 7 
+
+EVENT time: 163.759880,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 171.852382,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 1
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being corrupted
+4 6 7 
+
+EVENT time: 175.478042,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 3           TOLAYER3: packet being corrupted
+4           TOLAYER3: packet being corrupted
+5           TOLAYER3: packet being corrupted
+6           TOLAYER3: packet being lost
+7 8           TOLAYER3: packet being corrupted
+9           TOLAYER3: packet being lost
+10           TOLAYER3: packet being lost
+
+
+EVENT time: 177.297037,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 177.831812,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 4
+[B_input] il pacchetto è corretto 4
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being corrupted
+4 6 7 
+
+EVENT time: 179.698386,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 179.742424,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 179.850276,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 5
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being corrupted
+4 6 7 
+
+EVENT time: 180.913175,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 184.223762,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 187.908109,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 6
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+4 6 7 
+
+EVENT time: 195.227515,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 195.478042,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 3           TOLAYER3: packet being corrupted
+4           TOLAYER3: packet being lost
+5           TOLAYER3: packet being lost
+6           TOLAYER3: packet being lost
+7           TOLAYER3: packet being lost
+8           TOLAYER3: packet being lost
+9           TOLAYER3: packet being corrupted
+10 
+
+EVENT time: 195.483627,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 7
+[B_input] il pacchetto è corretto 7
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+4 6 7 
+
+EVENT time: 197.797082,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 8
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being corrupted
+4 6 7 
+
+EVENT time: 200.884426,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 200.957884,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 10
+[B_input] il pacchetto è corretto 10
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+4 6 7 10 
+
+EVENT time: 201.244911,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 206.023499,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 6
+[B_input] il pacchetto è corretto 6
+[B_input] B invia ack, ultimo pacchetto ackato 2
+4 6 7 10 
+
+EVENT time: 213.113193,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 214.461470,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 9
+[B_input] B invia ack, ultimo pacchetto ackato 2
+4 6 7 10 
+
+EVENT time: 214.763329,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 215.478042,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 3 4           TOLAYER3: packet being lost
+5 6 7           TOLAYER3: packet being lost
+8           TOLAYER3: packet being lost
+9           TOLAYER3: packet being lost
+10           TOLAYER3: packet being corrupted
+
+
+EVENT time: 216.883419,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 223.711081,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 3
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being corrupted
+4 6 7 10 
+
+EVENT time: 227.996368,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 999999
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+4 6 7 10 
+
+EVENT time: 228.899197,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 229.307016,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 5
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+4 6 7 10 
+
+EVENT time: 231.909146,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 7
+[B_input] il pacchetto è corretto 7
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+4 6 7 10 
+
+EVENT time: 232.038331,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 235.478042,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 3           TOLAYER3: packet being corrupted
+4           TOLAYER3: packet being corrupted
+5           TOLAYER3: packet being lost
+6           TOLAYER3: packet being lost
+7           TOLAYER3: packet being corrupted
+8           TOLAYER3: packet being lost
+9           TOLAYER3: packet being lost
+10 
+
+EVENT time: 238.976409,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 241.626240,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 8
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+4 6 7 10 
+
+EVENT time: 250.861568,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 3
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+4 6 7 10 
+
+EVENT time: 253.799860,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 254.358287,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 9
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+4 6 7 10 
+
+EVENT time: 255.478042,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 3           TOLAYER3: packet being lost
+4           TOLAYER3: packet being lost
+5           TOLAYER3: packet being lost
+6 7 8 9           TOLAYER3: packet being lost
+10           TOLAYER3: packet being lost
+
+
+EVENT time: 256.361644,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 10
+[B_input] il pacchetto è corretto 10
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being corrupted
+4 6 7 10 
+
+EVENT time: 261.053499,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 264.111026,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 264.988311,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 3
+[B_input] il pacchetto è corretto 3
+[B_input] B consegna il pacchetto 3
+[B_input] B consegna il pacchetto 4
+[B_input] B invia ack, ultimo pacchetto ackato 4
+          TOLAYER3: packet being lost
+6 7 10 
+
+EVENT time: 270.145116,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 5
+[B_input] il pacchetto è corretto 5
+[B_input] B consegna il pacchetto 5
+[B_input] B consegna il pacchetto 6
+[B_input] B consegna il pacchetto 7
+[B_input] B invia ack, ultimo pacchetto ackato 7
+10 
+
+EVENT time: 273.555101,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 274.102725,  type: 2, fromlayer3  entity: 0
+[A_input] A riceve ack 7
+[A_input] pacchetti nella finestra 3
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 11
+          TOLAYER3: packet being lost
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 12
+          TOLAYER3: packet being lost
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 13
+          TOLAYER3: packet being corrupted
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 14
+          TOLAYER3: packet being corrupted
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 15
+          TOLAYER3: packet being corrupted
+[A_input] base 8, ultimo numero di sequenza della finesta 15
+
+EVENT time: 276.685141,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 6
+[B_input] B invia ack, ultimo pacchetto ackato 7
+          TOLAYER3: packet being lost
+10 
+
+EVENT time: 282.336344,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 10
+[B_input] B invia ack, ultimo pacchetto ackato 7
+          TOLAYER3: packet being lost
+10 
+
+EVENT time: 282.487869,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 283.681600,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 3
+[B_input] B invia ack, ultimo pacchetto ackato 7
+          TOLAYER3: packet being lost
+10 
+
+EVENT time: 285.729545,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 286.452223,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 289.782983,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 4
+[B_input] B invia ack, ultimo pacchetto ackato 7
+10 
+
+EVENT time: 294.102725,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 8 9           TOLAYER3: packet being lost
+10           TOLAYER3: packet being corrupted
+11           TOLAYER3: packet being lost
+12           TOLAYER3: packet being lost
+13           TOLAYER3: packet being lost
+14           TOLAYER3: packet being corrupted
+15           TOLAYER3: packet being corrupted
+
+
+EVENT time: 297.507645,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 7
+[B_input] B invia ack, ultimo pacchetto ackato 7
+          TOLAYER3: packet being lost
+10 
+
+EVENT time: 297.814722,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 302.876064,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 304.779931,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 10
+[B_input] il pacchetto è corretto 10
+[B_input] B invia ack, ultimo pacchetto ackato 7
+          TOLAYER3: packet being lost
+10 
+
+EVENT time: 305.988678,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 6
+[B_input] B invia ack, ultimo pacchetto ackato 7
+          TOLAYER3: packet being lost
+10 
+
+EVENT time: 314.102725,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 8           TOLAYER3: packet being lost
+9           TOLAYER3: packet being lost
+10 11           TOLAYER3: packet being lost
+12 13           TOLAYER3: packet being lost
+14           TOLAYER3: packet being lost
+15           TOLAYER3: packet being lost
+
+
+EVENT time: 314.681265,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 7
+[B_input] B invia ack, ultimo pacchetto ackato 7
+10 
+
+EVENT time: 317.120243,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 320.805170,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 8
+[B_input] il pacchetto è corretto 8
+[B_input] B consegna il pacchetto 8
+[B_input] B invia ack, ultimo pacchetto ackato 8
+          TOLAYER3: packet being lost
+10 
+
+EVENT time: 322.422559,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 328.169195,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 13
+[B_input] B invia ack, ultimo pacchetto ackato 8
+          TOLAYER3: packet being corrupted
+10 
+
+EVENT time: 331.442610,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 332.157018,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 14
+[B_input] B invia ack, ultimo pacchetto ackato 8
+10 
+
+EVENT time: 334.102725,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 8           TOLAYER3: packet being lost
+9 10 11           TOLAYER3: packet being lost
+12           TOLAYER3: packet being lost
+13           TOLAYER3: packet being corrupted
+14           TOLAYER3: packet being lost
+15           TOLAYER3: packet being lost
+
+
+EVENT time: 337.110508,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 338.238075,  type: 2, fromlayer3  entity: 0
+[A_input] A riceve ack 8
+[A_input] pacchetti nella finestra 7
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 0
+[A_input] base 9, ultimo numero di sequenza della finesta 0
+
+EVENT time: 339.312113,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 339.852840,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 15
+[B_input] B invia ack, ultimo pacchetto ackato 8
+          TOLAYER3: packet being lost
+10 
+
+EVENT time: 343.964812,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 8
+[B_input] B invia ack, ultimo pacchetto ackato 8
+          TOLAYER3: packet being corrupted
+10 
+
+EVENT time: 346.236763,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 348.632435,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 350.655232,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 351.114841,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 353.208106,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 10
+[B_input] B invia ack, ultimo pacchetto ackato 8
+          TOLAYER3: packet being lost
+10 
+
+EVENT time: 358.238075,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 9           TOLAYER3: packet being corrupted
+10           TOLAYER3: packet being corrupted
+11           TOLAYER3: packet being lost
+12 13           TOLAYER3: packet being corrupted
+14           TOLAYER3: packet being corrupted
+15           TOLAYER3: packet being lost
+0           TOLAYER3: packet being corrupted
+
+
+EVENT time: 360.003021,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 14
+[B_input] B invia ack, ultimo pacchetto ackato 8
+          TOLAYER3: packet being lost
+10 
+
+EVENT time: 361.475265,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 364.899991,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 999999
+[B_input] B invia ack, ultimo pacchetto ackato 8
+          TOLAYER3: packet being lost
+10 
+
+EVENT time: 367.595782,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 10
+[B_input] il pacchetto è corretto 10
+[B_input] B invia ack, ultimo pacchetto ackato 8
+10 
+
+EVENT time: 374.448927,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 375.949705,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 12
+[B_input] il pacchetto è corretto 12
+[B_input] B invia ack, ultimo pacchetto ackato 8
+          TOLAYER3: packet being lost
+10 12 
+
+EVENT time: 376.500137,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 378.238075,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 9 10 11           TOLAYER3: packet being corrupted
+12           TOLAYER3: packet being lost
+13           TOLAYER3: packet being lost
+14 15           TOLAYER3: packet being lost
+0           TOLAYER3: packet being lost
+
+
+EVENT time: 378.933897,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 9
+[B_input] il pacchetto è corretto 9
+[B_input] B consegna il pacchetto 9
+[B_input] B consegna il pacchetto 10
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being corrupted
+12 
+
+EVENT time: 384.209723,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 385.186071,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 10
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+12 
+
+EVENT time: 386.407239,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 392.478408,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 393.317515,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 13
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+12 
+
+EVENT time: 395.090182,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 398.238075,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 9           TOLAYER3: packet being lost
+10           TOLAYER3: packet being lost
+11           TOLAYER3: packet being lost
+12 13           TOLAYER3: packet being corrupted
+14           TOLAYER3: packet being lost
+15           TOLAYER3: packet being corrupted
+0           TOLAYER3: packet being lost
+
+
+EVENT time: 400.287393,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 0
+[B_input] il pacchetto è corretto 0
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+0 12 
+
+EVENT time: 401.538438,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 9
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+0 12 
+
+EVENT time: 408.216193,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 410.842982,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 10
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+0 12 
+
+EVENT time: 410.865810,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 418.238075,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 9           TOLAYER3: packet being lost
+10           TOLAYER3: packet being lost
+11           TOLAYER3: packet being lost
+12           TOLAYER3: packet being corrupted
+13 14           TOLAYER3: packet being corrupted
+15           TOLAYER3: packet being lost
+0           TOLAYER3: packet being corrupted
+
+
+EVENT time: 420.240364,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 12
+[B_input] il pacchetto è corretto 12
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+0 12 
+
+EVENT time: 424.314432,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 13
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+0 12 
+
+EVENT time: 425.678091,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 14
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being corrupted
+0 12 
+
+EVENT time: 427.908048,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 428.738639,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 0
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+0 12 
+
+EVENT time: 429.757988,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 436.710227,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 9
+[B_input] B invia ack, ultimo pacchetto ackato 10
+0 12 
+
+EVENT time: 438.233741,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 10
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+0 12 
+
+EVENT time: 438.238075,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 9           TOLAYER3: packet being lost
+10           TOLAYER3: packet being corrupted
+11 12           TOLAYER3: packet being lost
+13           TOLAYER3: packet being corrupted
+14           TOLAYER3: packet being lost
+15 0 
+
+EVENT time: 440.711997,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 11
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+0 12 
+
+EVENT time: 440.908994,  type: 2, fromlayer3  entity: 0
+[A_input] A riceve ack 10
+[A_input] pacchetti nella finestra 6
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 1
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 2
+[A_input] base 11, ultimo numero di sequenza della finesta 2
+
+EVENT time: 441.809137,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 449.613880,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 14
+[B_input] il pacchetto è corretto 14
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being corrupted
+0 12 14 
+
+EVENT time: 451.312632,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 456.672750,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 12
+[B_input] il pacchetto è corretto 12
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+0 12 14 
+
+EVENT time: 459.634999,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 460.908994,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 11           TOLAYER3: packet being lost
+12           TOLAYER3: packet being corrupted
+13           TOLAYER3: packet being lost
+14           TOLAYER3: packet being corrupted
+15           TOLAYER3: packet being lost
+0           TOLAYER3: packet being corrupted
+1 2           TOLAYER3: packet being corrupted
+
+
+EVENT time: 462.637898,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 13
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being corrupted
+0 12 14 
+
+EVENT time: 465.807215,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 468.410504,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 15
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+0 12 14 
+
+EVENT time: 468.725242,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 473.705252,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 475.080447,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 12
+[B_input] B invia ack, ultimo pacchetto ackato 10
+0 12 14 
+
+EVENT time: 477.288980,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 477.677358,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 13
+[B_input] il pacchetto è corretto 13
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being corrupted
+0 12 13 14 
+
+EVENT time: 480.908994,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 11 12           TOLAYER3: packet being corrupted
+13           TOLAYER3: packet being corrupted
+14           TOLAYER3: packet being corrupted
+15           TOLAYER3: packet being lost
+0 1           TOLAYER3: packet being corrupted
+2           TOLAYER3: packet being lost
+
+
+EVENT time: 483.447493,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 14
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+0 12 13 14 
+
+EVENT time: 485.200964,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 491.328166,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 0
+[B_input] B invia ack, ultimo pacchetto ackato 10
+0 12 13 14 
+
+EVENT time: 492.281869,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 493.245827,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 497.156804,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 10
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being corrupted
+0 12 13 14 
+
+EVENT time: 500.908994,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 11           TOLAYER3: packet being lost
+12 13           TOLAYER3: packet being lost
+14 15           TOLAYER3: packet being lost
+0           TOLAYER3: packet being lost
+1 2           TOLAYER3: packet being lost
+
+
+EVENT time: 501.912320,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 11
+[B_input] il pacchetto è corretto 11
+[B_input] B consegna il pacchetto 11
+[B_input] B consegna il pacchetto 12
+[B_input] B consegna il pacchetto 13
+[B_input] B consegna il pacchetto 14
+[B_input] B invia ack, ultimo pacchetto ackato 14
+          TOLAYER3: packet being corrupted
+0 
+
+EVENT time: 504.715567,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 507.472884,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 508.987121,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 13
+[B_input] B invia ack, ultimo pacchetto ackato 14
+          TOLAYER3: packet being lost
+0 
+
+EVENT time: 510.593585,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 518.933561,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 15
+[B_input] il pacchetto è corretto 15
+[B_input] B consegna il pacchetto 15
+[B_input] B consegna il pacchetto 0
+[B_input] B invia ack, ultimo pacchetto ackato 0
+
+
+EVENT time: 520.908994,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 11 12           TOLAYER3: packet being lost
+13           TOLAYER3: packet being corrupted
+14           TOLAYER3: packet being lost
+15           TOLAYER3: packet being corrupted
+0           TOLAYER3: packet being lost
+1           TOLAYER3: packet being corrupted
+2           TOLAYER3: packet being lost
+
+
+EVENT time: 523.719565,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 0
+[B_input] B invia ack, ultimo pacchetto ackato 0
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 524.407880,  type: 2, fromlayer3  entity: 0
+[A_input] A riceve ack 0
+[A_input] pacchetti nella finestra 2
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 3
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 4
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 5
+          TOLAYER3: packet being lost
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 6
+          TOLAYER3: packet being lost
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 7
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 8
+          TOLAYER3: packet being corrupted
+[A_input] base 1, ultimo numero di sequenza della finesta 8
+
+EVENT time: 527.771935,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 530.508744,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 531.061617,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 1
+[B_input] il pacchetto è corretto 1
+[B_input] B consegna il pacchetto 1
+[B_input] B invia ack, ultimo pacchetto ackato 1
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 539.773156,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 2
+[B_input] il pacchetto è corretto 2
+[B_input] B consegna il pacchetto 2
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+
+
+EVENT time: 540.848201,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 543.312723,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 12
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+
+
+EVENT time: 544.407880,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 1           TOLAYER3: packet being lost
+2           TOLAYER3: packet being lost
+3           TOLAYER3: packet being lost
+4           TOLAYER3: packet being lost
+5           TOLAYER3: packet being corrupted
+6           TOLAYER3: packet being lost
+7           TOLAYER3: packet being lost
+8           TOLAYER3: packet being lost
+
+
+EVENT time: 546.895962,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 552.455214,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 999999
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+
+
+EVENT time: 557.962584,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 561.778161,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 999999
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+
+
+EVENT time: 564.016633,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 1
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+
+
+EVENT time: 564.407880,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 1           TOLAYER3: packet being corrupted
+2           TOLAYER3: packet being lost
+3           TOLAYER3: packet being corrupted
+4 5 6 7           TOLAYER3: packet being lost
+8 
+
+EVENT time: 566.168035,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 2
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+
+
+EVENT time: 567.680898,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 575.632160,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 11
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+
+
+EVENT time: 575.875118,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 582.274239,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 582.810785,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 12
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+
+
+EVENT time: 584.407880,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 1           TOLAYER3: packet being lost
+2           TOLAYER3: packet being corrupted
+3           TOLAYER3: packet being lost
+4           TOLAYER3: packet being lost
+5           TOLAYER3: packet being lost
+6           TOLAYER3: packet being lost
+7           TOLAYER3: packet being corrupted
+8           TOLAYER3: packet being lost
+
+
+EVENT time: 587.478133,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 13
+[B_input] B invia ack, ultimo pacchetto ackato 2
+
+
+EVENT time: 589.755547,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 590.575274,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 592.744530,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 14
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+
+
+EVENT time: 596.017670,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 0
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+
+
+EVENT time: 597.475661,  type: 2, fromlayer3  entity: 0
+[A_input] A riceve ack 2
+[A_input] pacchetti nella finestra 6
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 9
+          TOLAYER3: packet being lost
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 10
+          TOLAYER3: packet being lost
+[A_input] base 3, ultimo numero di sequenza della finesta 10
+
+EVENT time: 605.166204,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 1
+[B_input] B invia ack, ultimo pacchetto ackato 2
+
+
+EVENT time: 607.538072,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 610.062349,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 610.771813,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 613.561052,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 12
+[B_input] B invia ack, ultimo pacchetto ackato 2
+
+
+EVENT time: 615.038972,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 14
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 617.475661,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 3           TOLAYER3: packet being corrupted
+4           TOLAYER3: packet being lost
+5           TOLAYER3: packet being corrupted
+6           TOLAYER3: packet being corrupted
+7           TOLAYER3: packet being lost
+8           TOLAYER3: packet being lost
+9 10           TOLAYER3: packet being lost
+
+
+EVENT time: 617.673025,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 618.187140,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 1
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+
+
+EVENT time: 620.548723,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 625.056490,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 11
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 626.351207,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 13
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+
+
+EVENT time: 626.451308,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 632.707480,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 15
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 634.101535,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 635.984375,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 637.475661,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 3 4           TOLAYER3: packet being corrupted
+5 6           TOLAYER3: packet being corrupted
+7           TOLAYER3: packet being lost
+8 9           TOLAYER3: packet being lost
+10 
+
+EVENT time: 638.142369,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 639.463485,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 640.655538,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 641.144444,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 641.584094,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 1
+[B_input] B invia ack, ultimo pacchetto ackato 2
+          TOLAYER3: packet being lost
+
+
+EVENT time: 643.217200,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 3
+[B_input] il pacchetto è corretto 3
+[B_input] B consegna il pacchetto 3
+[B_input] B invia ack, ultimo pacchetto ackato 3
+          TOLAYER3: packet being lost
+
+
+EVENT time: 651.273934,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 4
+[B_input] il pacchetto è corretto 4
+[B_input] B consegna il pacchetto 4
+[B_input] B invia ack, ultimo pacchetto ackato 4
+          TOLAYER3: packet being lost
+
+
+EVENT time: 657.475661,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 3           TOLAYER3: packet being corrupted
+4           TOLAYER3: packet being lost
+5 6 7           TOLAYER3: packet being lost
+8           TOLAYER3: packet being lost
+9           TOLAYER3: packet being corrupted
+10           TOLAYER3: packet being lost
+
+
+EVENT time: 658.061464,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 659.781671,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 7
+[B_input] il pacchetto è corretto 7
+[B_input] B invia ack, ultimo pacchetto ackato 4
+          TOLAYER3: packet being lost
+7 
+
+EVENT time: 662.285745,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 999999
+[B_input] B invia ack, ultimo pacchetto ackato 4
+          TOLAYER3: packet being corrupted
+7 
+
+EVENT time: 666.042848,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 5
+[B_input] B invia ack, ultimo pacchetto ackato 4
+          TOLAYER3: packet being corrupted
+7 
+
+EVENT time: 671.474929,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 671.947020,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 1
+[B_input] B invia ack, ultimo pacchetto ackato 4
+          TOLAYER3: packet being corrupted
+7 
+
+EVENT time: 672.497726,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 675.409406,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 677.475661,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 3 4           TOLAYER3: packet being corrupted
+5           TOLAYER3: packet being corrupted
+6           TOLAYER3: packet being corrupted
+7           TOLAYER3: packet being lost
+8 9           TOLAYER3: packet being lost
+10           TOLAYER3: packet being lost
+
+
+EVENT time: 677.924131,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 680.030396,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 3
+[B_input] B invia ack, ultimo pacchetto ackato 4
+7 
+
+EVENT time: 687.791314,  type: 2, fromlayer3  entity: 0
+[A_input] A riceve ack 4
+[A_input] pacchetti nella finestra 6
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 11
+          TOLAYER3: packet being lost
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 12
+          TOLAYER3: packet being lost
+[A_input] base 5, ultimo numero di sequenza della finesta 12
+
+EVENT time: 689.267098,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 4
+[B_input] B invia ack, ultimo pacchetto ackato 4
+7 
+
+EVENT time: 691.106479,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 693.755303,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 697.953368,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 5
+[B_input] il pacchetto è corretto 5
+[B_input] B consegna il pacchetto 5
+[B_input] B invia ack, ultimo pacchetto ackato 5
+          TOLAYER3: packet being lost
+7 
+
+EVENT time: 699.394757,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 6
+[B_input] il pacchetto è corretto 6
+[B_input] B consegna il pacchetto 6
+[B_input] B consegna il pacchetto 7
+[B_input] B invia ack, ultimo pacchetto ackato 7
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 700.853999,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 8
+[B_input] il pacchetto è corretto 8
+[B_input] B consegna il pacchetto 8
+[B_input] B invia ack, ultimo pacchetto ackato 8
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 707.791314,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 5           TOLAYER3: packet being lost
+6           TOLAYER3: packet being lost
+7 8           TOLAYER3: packet being lost
+9           TOLAYER3: packet being corrupted
+10           TOLAYER3: packet being lost
+11           TOLAYER3: packet being lost
+12           TOLAYER3: packet being corrupted
+
+
+EVENT time: 708.789880,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 2
+[B_input] B invia ack, ultimo pacchetto ackato 8
+          TOLAYER3: packet being lost
+
+
+EVENT time: 709.125858,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 711.638539,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 715.175817,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 7
+[B_input] B invia ack, ultimo pacchetto ackato 8
+
+
+EVENT time: 716.513779,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 722.097629,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 3
+[B_input] B invia ack, ultimo pacchetto ackato 8
+
+
+EVENT time: 723.068087,  type: 2, fromlayer3  entity: 0
+[A_input] A riceve ack 8
+[A_input] pacchetti nella finestra 4
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 13
+          TOLAYER3: packet being lost
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 14
+          TOLAYER3: packet being corrupted
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 15
+          TOLAYER3: packet being lost
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 0
+          TOLAYER3: packet being lost
+[A_input] base 9, ultimo numero di sequenza della finesta 0
+
+EVENT time: 726.737877,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 728.702048,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 731.000610,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 5
+[B_input] B invia ack, ultimo pacchetto ackato 8
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 731.665365,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 734.969543,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 735.862423,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 6
+[B_input] B invia ack, ultimo pacchetto ackato 8
+
+
+EVENT time: 737.883908,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 9
+[B_input] il pacchetto è corretto 9
+[B_input] B consegna il pacchetto 9
+[B_input] B invia ack, ultimo pacchetto ackato 9
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 739.504929,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 3
+[B_input] B invia ack, ultimo pacchetto ackato 9
+          TOLAYER3: packet being lost
+
+
+EVENT time: 743.068087,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 9           TOLAYER3: packet being corrupted
+10           TOLAYER3: packet being corrupted
+11 12           TOLAYER3: packet being lost
+13           TOLAYER3: packet being corrupted
+14 15           TOLAYER3: packet being lost
+0           TOLAYER3: packet being lost
+
+
+EVENT time: 745.802271,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 746.236763,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 746.888455,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 4
+[B_input] B invia ack, ultimo pacchetto ackato 9
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 749.697409,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 5
+[B_input] B invia ack, ultimo pacchetto ackato 9
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 751.280160,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 751.863369,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 6
+[B_input] B invia ack, ultimo pacchetto ackato 9
+
+
+EVENT time: 760.245491,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 760.979217,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 8
+[B_input] B invia ack, ultimo pacchetto ackato 9
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 762.760094,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 763.068087,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 9           TOLAYER3: packet being lost
+10 11           TOLAYER3: packet being corrupted
+12 13           TOLAYER3: packet being lost
+14 15 0           TOLAYER3: packet being lost
+
+
+EVENT time: 765.824549,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 10
+[B_input] il pacchetto è corretto 10
+[B_input] B consegna il pacchetto 10
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 767.850581,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 769.207801,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 771.978942,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 3
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+
+
+EVENT time: 773.328013,  type: 2, fromlayer3  entity: 0
+[A_input] A riceve ack 9
+[A_input] pacchetti nella finestra 7
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 1
+          TOLAYER3: packet being corrupted
+[A_input] base 10, ultimo numero di sequenza della finesta 1
+
+EVENT time: 776.212653,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 780.553697,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 5
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 783.236549,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 784.072390,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 789.428938,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 6
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being corrupted
+
+
+EVENT time: 790.195441,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 792.084902,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 9
+[B_input] B invia ack, ultimo pacchetto ackato 10
+
+
+EVENT time: 793.328013,  type: 0, timerinterrupt   entity: 0
+Riinvio pacchetti 10           TOLAYER3: packet being corrupted
+11 12           TOLAYER3: packet being lost
+13 14           TOLAYER3: packet being corrupted
+15 0           TOLAYER3: packet being lost
+1           TOLAYER3: packet being corrupted
+
+
+EVENT time: 794.224677,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 799.114078,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 801.645161,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 3
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+
+
+EVENT time: 809.027833,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 811.444929,  type: 2, fromlayer3  entity: 1
+[B_input] B riceve pacchetto 4
+[B_input] B invia ack, ultimo pacchetto ackato 10
+          TOLAYER3: packet being lost
+
+
+EVENT time: 811.472854,  type: 2, fromlayer3  entity: 0
+[A_input] A riceve ack 10
+[A_input] pacchetti nella finestra 7
+[A_input] ci sono degli altri messaggi da inviare nel buffer
+[A_output] A invia pacchetto 2
+          TOLAYER3: packet being corrupted
+[A_input] base 11, ultimo numero di sequenza della finesta 2
+
+EVENT time: 811.490829,  type: 1, fromlayer5  entity: 0
+[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
+
+EVENT time: 812.831812,  type: 1, fromlayer5  entity: 0
+Packet trasmitted 35
+Packet retrasmitted 271
+Packet acked 136
+Packet corrupted 73
+Simulator terminated at time 812.831812494277
