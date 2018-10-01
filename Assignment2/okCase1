@@ -1,10 +1,10 @@
 ----- * ARQ Network Simulator Version 1.1 * ------ 
 
-Enter number of messages to simulate: 20
-Enter packet loss probability [enter 0.0 for no loss]:0
+Enter number of messages to simulate:80
+ Enter packet loss probability [enter 0.0 for no loss]:0
 Enter packet corruption probability [0.0 for no corruption]:0
 Enter average time between messages from sender's layer5 [ > 0.0]:10
-Enter window size [>0]:8
+Enter window size [>0]:1
 Enter retransmission timeout [> 0.0]:20
 Enter trace level:2
 Enter random seed: [>0]:2233
@@ -20,7 +20,8 @@ EVENT time: 11.710562,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 14.562120,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :1940 , checksum nel pacchetto : 1940/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :1940 , checksum nel pacchetto : 1940
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 17.071139,  type: 2, fromlayer3  entity: 0
@@ -32,7 +33,8 @@ EVENT time: 17.071139,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 25.999664,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :1962 , checksum nel pacchetto : 1962/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :1962 , checksum nel pacchetto : 1962
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 29.176305,  type: 1, fromlayer5  entity: 0
@@ -46,7 +48,7 @@ EVENT time: 31.216773,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 3
 
 EVENT time: 34.390393,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :23 , checksum nel pacchetto : 23/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-90 , checksum nel pacchetto : -90/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 2
@@ -54,7 +56,8 @@ EVENT time: 34.390393,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 39.239021,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :1980 , checksum nel pacchetto : 1980/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :1980 , checksum nel pacchetto : 1980
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 46.134831,  type: 1, fromlayer5  entity: 0
@@ -63,7 +66,7 @@ EVENT time: 46.134831,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 4
 
 EVENT time: 47.469069,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :21 , checksum nel pacchetto : 21/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-92 , checksum nel pacchetto : -92/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 3
@@ -71,11 +74,12 @@ EVENT time: 47.469069,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 53.617695,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2002 , checksum nel pacchetto : 2002/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2002 , checksum nel pacchetto : 2002
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 55.964660,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :23 , checksum nel pacchetto : 23/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-90 , checksum nel pacchetto : -90/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 4
@@ -93,11 +97,12 @@ EVENT time: 58.933073,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 60.022248,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2020 , checksum nel pacchetto : 2020/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2020 , checksum nel pacchetto : 2020
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 64.223487,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :21 , checksum nel pacchetto : 21/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-92 , checksum nel pacchetto : -92/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 5
@@ -105,11 +110,12 @@ EVENT time: 64.223487,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 70.540483,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2042 , checksum nel pacchetto : 2042/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2042 , checksum nel pacchetto : 2042
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 76.080721,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :138 , checksum nel pacchetto : 138/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :25 , checksum nel pacchetto : 25/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 6
@@ -127,11 +133,12 @@ EVENT time: 78.770104,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 83.771050,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2060 , checksum nel pacchetto : 2060/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2060 , checksum nel pacchetto : 2060
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 87.708335,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :136 , checksum nel pacchetto : 136/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :23 , checksum nel pacchetto : 23/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 7
@@ -144,7 +151,8 @@ EVENT time: 91.162450,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 91.720054,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2082 , checksum nel pacchetto : 2082/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2082 , checksum nel pacchetto : 2082
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 94.589068,  type: 1, fromlayer5  entity: 0
@@ -153,7 +161,7 @@ EVENT time: 94.589068,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 10
 
 EVENT time: 97.448714,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :87 , checksum nel pacchetto : 87/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-26 , checksum nel pacchetto : -26/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 8
@@ -166,11 +174,12 @@ EVENT time: 102.116153,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 103.206488,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2100 , checksum nel pacchetto : 2100/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2100 , checksum nel pacchetto : 2100
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 107.735954,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-60 , checksum nel pacchetto : -60/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-173 , checksum nel pacchetto : -173/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 9
@@ -178,7 +187,8 @@ EVENT time: 107.735954,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 112.379955,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2122 , checksum nel pacchetto : 2122/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2122 , checksum nel pacchetto : 2122
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 112.803125,  type: 1, fromlayer5  entity: 0
@@ -192,7 +202,7 @@ EVENT time: 116.520280,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 13
 
 EVENT time: 119.738762,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-4 , checksum nel pacchetto : -4/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-117 , checksum nel pacchetto : -117/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 10
@@ -200,7 +210,8 @@ EVENT time: 119.738762,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 129.244911,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2140 , checksum nel pacchetto : 2140/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2140 , checksum nel pacchetto : 2140
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 129.616382,  type: 1, fromlayer5  entity: 0
@@ -214,7 +225,7 @@ EVENT time: 130.294504,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 15
 
 EVENT time: 131.025239,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-6 , checksum nel pacchetto : -6/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-119 , checksum nel pacchetto : -119/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 11
@@ -222,11 +233,12 @@ EVENT time: 131.025239,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 136.116672,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2162 , checksum nel pacchetto : 2162/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2162 , checksum nel pacchetto : 2162
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 138.404035,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-4 , checksum nel pacchetto : -4/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-117 , checksum nel pacchetto : -117/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 12
@@ -234,11 +246,12 @@ EVENT time: 138.404035,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 140.139042,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2180 , checksum nel pacchetto : 2180/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2180 , checksum nel pacchetto : 2180
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 149.396893,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-6 , checksum nel pacchetto : -6/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-119 , checksum nel pacchetto : -119/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 13
@@ -251,11 +264,12 @@ EVENT time: 149.752495,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 154.998383,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2202 , checksum nel pacchetto : 2202/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2202 , checksum nel pacchetto : 2202
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 156.093417,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :59 , checksum nel pacchetto : 59/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-54 , checksum nel pacchetto : -54/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 14
@@ -263,11 +277,12 @@ EVENT time: 156.093417,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 158.716422,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2220 , checksum nel pacchetto : 2220/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2220 , checksum nel pacchetto : 2220
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 163.202490,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-51 , checksum nel pacchetto : -51/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-164 , checksum nel pacchetto : -164/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 15
@@ -280,7 +295,8 @@ EVENT time: 163.759880,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 172.012635,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2242 , checksum nel pacchetto : 2242/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2242 , checksum nel pacchetto : 2242
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 179.742424,  type: 1, fromlayer5  entity: 0
@@ -289,7 +305,7 @@ EVENT time: 179.742424,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 18
 
 EVENT time: 181.975555,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-4 , checksum nel pacchetto : -4/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-117 , checksum nel pacchetto : -117/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 16
@@ -302,7 +318,8 @@ EVENT time: 184.223762,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 188.627094,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2260 , checksum nel pacchetto : 2260/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2260 , checksum nel pacchetto : 2260
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 195.227515,  type: 1, fromlayer5  entity: 0
@@ -311,7 +328,7 @@ EVENT time: 195.227515,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 20
 
 EVENT time: 197.624287,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-21 , checksum nel pacchetto : -21/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-134 , checksum nel pacchetto : -134/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 17
@@ -319,7 +336,8 @@ EVENT time: 197.624287,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 199.843532,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2282 , checksum nel pacchetto : 2282/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2282 , checksum nel pacchetto : 2282
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 200.884426,  type: 1, fromlayer5  entity: 0
@@ -328,7 +346,7 @@ EVENT time: 200.884426,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 21
 
 EVENT time: 204.417493,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :129 , checksum nel pacchetto : 129/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :16 , checksum nel pacchetto : 16/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 18
@@ -341,11 +359,12 @@ EVENT time: 213.113193,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 214.138432,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2300 , checksum nel pacchetto : 2300/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2300 , checksum nel pacchetto : 2300
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 223.592669,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-18 , checksum nel pacchetto : -18/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-131 , checksum nel pacchetto : -131/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 19
@@ -353,11 +372,12 @@ EVENT time: 223.592669,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 229.572100,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2322 , checksum nel pacchetto : 2322/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2322 , checksum nel pacchetto : 2322
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 231.590564,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-46 , checksum nel pacchetto : -46/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-159 , checksum nel pacchetto : -159/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 20
@@ -375,11 +395,12 @@ EVENT time: 238.976409,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 239.648396,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2340 , checksum nel pacchetto : 2340/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2340 , checksum nel pacchetto : 2340
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 247.223914,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-48 , checksum nel pacchetto : -48/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-161 , checksum nel pacchetto : -161/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 21
@@ -387,11 +408,12 @@ EVENT time: 247.223914,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 249.537370,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2362 , checksum nel pacchetto : 2362/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2362 , checksum nel pacchetto : 2362
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 252.698172,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-13 , checksum nel pacchetto : -13/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-126 , checksum nel pacchetto : -126/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 22
@@ -404,7 +426,8 @@ EVENT time: 253.799860,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 260.696402,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2380 , checksum nel pacchetto : 2380/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2380 , checksum nel pacchetto : 2380
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 261.053499,  type: 1, fromlayer5  entity: 0
@@ -413,7 +436,7 @@ EVENT time: 261.053499,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 26
 
 EVENT time: 265.762017,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :127 , checksum nel pacchetto : 127/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :14 , checksum nel pacchetto : 14/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 23
@@ -426,11 +449,12 @@ EVENT time: 273.555101,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 274.199988,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2402 , checksum nel pacchetto : 2402/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2402 , checksum nel pacchetto : 2402
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 279.644642,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :32 , checksum nel pacchetto : 32/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-81 , checksum nel pacchetto : -81/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 24
@@ -453,11 +477,12 @@ EVENT time: 286.452223,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 288.894253,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2420 , checksum nel pacchetto : 2420/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2420 , checksum nel pacchetto : 2420
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 293.179540,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-30 , checksum nel pacchetto : -30/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-143 , checksum nel pacchetto : -143/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 25
@@ -465,11 +490,12 @@ EVENT time: 293.179540,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 294.490188,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2442 , checksum nel pacchetto : 2442/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2442 , checksum nel pacchetto : 2442
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 297.092318,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :150 , checksum nel pacchetto : 150/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :37 , checksum nel pacchetto : 37/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 26
@@ -482,11 +508,12 @@ EVENT time: 302.876064,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 306.809412,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :1940 , checksum nel pacchetto : 1940/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :1940 , checksum nel pacchetto : 1940
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 308.675985,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :163 , checksum nel pacchetto : 163/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :50 , checksum nel pacchetto : 50/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 27
@@ -494,11 +521,12 @@ EVENT time: 308.675985,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 309.738884,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :1962 , checksum nel pacchetto : 1962/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :1962 , checksum nel pacchetto : 1962
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 318.974212,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :135 , checksum nel pacchetto : 135/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :22 , checksum nel pacchetto : 22/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 28
@@ -511,11 +539,12 @@ EVENT time: 322.422559,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 322.470931,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :1980 , checksum nel pacchetto : 1980/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :1980 , checksum nel pacchetto : 1980
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 324.474288,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :148 , checksum nel pacchetto : 148/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :35 , checksum nel pacchetto : 35/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 29
@@ -523,11 +552,12 @@ EVENT time: 324.474288,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 327.922117,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2002 , checksum nel pacchetto : 2002/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2002 , checksum nel pacchetto : 2002
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 336.661946,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :120 , checksum nel pacchetto : 120/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :7 , checksum nel pacchetto : 7/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 30
@@ -540,7 +570,8 @@ EVENT time: 337.110508,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 338.782037,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2020 , checksum nel pacchetto : 2020/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2020 , checksum nel pacchetto : 2020
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 339.312113,  type: 1, fromlayer5  entity: 0
@@ -554,7 +585,7 @@ EVENT time: 346.236763,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 35
 
 EVENT time: 347.408704,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :133 , checksum nel pacchetto : 133/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :20 , checksum nel pacchetto : 20/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 31
@@ -572,11 +603,12 @@ EVENT time: 351.114841,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 352.565508,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2042 , checksum nel pacchetto : 2042/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2042 , checksum nel pacchetto : 2042
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 359.105533,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :105 , checksum nel pacchetto : 105/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-8 , checksum nel pacchetto : -8/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 32
@@ -589,11 +621,12 @@ EVENT time: 361.475265,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 364.756737,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2060 , checksum nel pacchetto : 2060/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2060 , checksum nel pacchetto : 2060
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 369.944853,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :118 , checksum nel pacchetto : 118/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :5 , checksum nel pacchetto : 5/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 33
@@ -601,7 +634,8 @@ EVENT time: 369.944853,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 371.290109,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2082 , checksum nel pacchetto : 2082/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2082 , checksum nel pacchetto : 2082
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 376.500137,  type: 1, fromlayer5  entity: 0
@@ -610,7 +644,7 @@ EVENT time: 376.500137,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 39
 
 EVENT time: 377.391491,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :26 , checksum nel pacchetto : 26/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-87 , checksum nel pacchetto : -87/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 34
@@ -623,11 +657,12 @@ EVENT time: 384.209723,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 385.116153,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2100 , checksum nel pacchetto : 2100/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2100 , checksum nel pacchetto : 2100
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 392.388440,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :130 , checksum nel pacchetto : 130/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :17 , checksum nel pacchetto : 17/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 35
@@ -640,7 +675,8 @@ EVENT time: 392.478408,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 393.597186,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2122 , checksum nel pacchetto : 2122/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2122 , checksum nel pacchetto : 2122
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 395.090182,  type: 1, fromlayer5  entity: 0
@@ -649,7 +685,7 @@ EVENT time: 395.090182,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 42
 
 EVENT time: 402.289773,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :26 , checksum nel pacchetto : 26/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-87 , checksum nel pacchetto : -87/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 36
@@ -662,7 +698,8 @@ EVENT time: 408.216193,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 408.413678,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2140 , checksum nel pacchetto : 2140/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2140 , checksum nel pacchetto : 2140
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 410.865810,  type: 1, fromlayer5  entity: 0
@@ -671,7 +708,7 @@ EVENT time: 410.865810,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 44
 
 EVENT time: 416.163060,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-39 , checksum nel pacchetto : -39/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-152 , checksum nel pacchetto : -152/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 37
@@ -679,11 +716,12 @@ EVENT time: 416.163060,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 420.120670,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2162 , checksum nel pacchetto : 2162/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2162 , checksum nel pacchetto : 2162
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 427.484695,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :141 , checksum nel pacchetto : 141/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :28 , checksum nel pacchetto : 28/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 38
@@ -696,11 +734,12 @@ EVENT time: 429.757988,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 431.472518,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2180 , checksum nel pacchetto : 2180/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2180 , checksum nel pacchetto : 2180
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 439.168340,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :106 , checksum nel pacchetto : 106/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-7 , checksum nel pacchetto : -7/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 39
@@ -713,11 +752,12 @@ EVENT time: 441.809137,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 447.200079,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2202 , checksum nel pacchetto : 2202/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2202 , checksum nel pacchetto : 2202
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 451.312052,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :141 , checksum nel pacchetto : 141/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :28 , checksum nel pacchetto : 28/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 40
@@ -730,11 +770,12 @@ EVENT time: 459.634999,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 460.555345,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2220 , checksum nel pacchetto : 2220/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2220 , checksum nel pacchetto : 2220
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 467.350261,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :172 , checksum nel pacchetto : 172/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :59 , checksum nel pacchetto : 59/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 41
@@ -747,7 +788,8 @@ EVENT time: 468.725242,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 472.247230,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2242 , checksum nel pacchetto : 2242/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2242 , checksum nel pacchetto : 2242
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 473.705252,  type: 1, fromlayer5  entity: 0
@@ -756,7 +798,7 @@ EVENT time: 473.705252,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 49
 
 EVENT time: 474.943022,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :62 , checksum nel pacchetto : 62/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-51 , checksum nel pacchetto : -51/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 42
@@ -764,11 +806,12 @@ EVENT time: 474.943022,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 483.296945,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2260 , checksum nel pacchetto : 2260/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2260 , checksum nel pacchetto : 2260
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 485.735923,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :94 , checksum nel pacchetto : 94/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-19 , checksum nel pacchetto : -19/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 43
@@ -776,7 +819,8 @@ EVENT time: 485.735923,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 489.009339,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2282 , checksum nel pacchetto : 2282/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2282 , checksum nel pacchetto : 2282
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 492.281869,  type: 1, fromlayer5  entity: 0
@@ -785,7 +829,7 @@ EVENT time: 492.281869,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 50
 
 EVENT time: 495.090396,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :96 , checksum nel pacchetto : 96/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-17 , checksum nel pacchetto : -17/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 44
@@ -793,11 +837,12 @@ EVENT time: 495.090396,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 498.074587,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2300 , checksum nel pacchetto : 2300/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2300 , checksum nel pacchetto : 2300
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 504.326762,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :94 , checksum nel pacchetto : 94/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-19 , checksum nel pacchetto : -19/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 45
@@ -810,11 +855,12 @@ EVENT time: 510.593585,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 512.458205,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2322 , checksum nel pacchetto : 2322/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2322 , checksum nel pacchetto : 2322
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 519.428083,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :192 , checksum nel pacchetto : 192/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :79 , checksum nel pacchetto : 79/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 46
@@ -822,11 +868,12 @@ EVENT time: 519.428083,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 524.095706,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2340 , checksum nel pacchetto : 2340/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2340 , checksum nel pacchetto : 2340
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 525.346751,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :112 , checksum nel pacchetto : 112/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-1 , checksum nel pacchetto : -1/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 47
@@ -839,11 +886,12 @@ EVENT time: 530.508744,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 534.651296,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2362 , checksum nel pacchetto : 2362/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2362 , checksum nel pacchetto : 2362
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 544.048677,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :96 , checksum nel pacchetto : 96/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-17 , checksum nel pacchetto : -17/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 48
@@ -856,11 +904,12 @@ EVENT time: 546.895962,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 548.122745,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2380 , checksum nel pacchetto : 2380/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2380 , checksum nel pacchetto : 2380
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 549.486404,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :112 , checksum nel pacchetto : 112/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-1 , checksum nel pacchetto : -1/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 49
@@ -868,7 +917,8 @@ EVENT time: 549.486404,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 552.546953,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2402 , checksum nel pacchetto : 2402/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2402 , checksum nel pacchetto : 2402
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 557.962584,  type: 1, fromlayer5  entity: 0
@@ -877,7 +927,7 @@ EVENT time: 557.962584,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 54
 
 EVENT time: 559.400098,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-13 , checksum nel pacchetto : -13/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-126 , checksum nel pacchetto : -126/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 50
@@ -885,7 +935,8 @@ EVENT time: 559.400098,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 567.371685,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2420 , checksum nel pacchetto : 2420/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2420 , checksum nel pacchetto : 2420
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 567.680898,  type: 1, fromlayer5  entity: 0
@@ -894,7 +945,7 @@ EVENT time: 567.680898,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 55
 
 EVENT time: 568.895199,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-15 , checksum nel pacchetto : -15/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-128 , checksum nel pacchetto : -128/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 51
@@ -902,7 +953,8 @@ EVENT time: 568.895199,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 571.373455,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2442 , checksum nel pacchetto : 2442/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2442 , checksum nel pacchetto : 2442
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 575.875118,  type: 1, fromlayer5  entity: 0
@@ -911,7 +963,7 @@ EVENT time: 575.875118,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 56
 
 EVENT time: 580.275338,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-13 , checksum nel pacchetto : -13/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-126 , checksum nel pacchetto : -126/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 52
@@ -924,7 +976,8 @@ EVENT time: 582.274239,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 587.748680,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :1940 , checksum nel pacchetto : 1940/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :1940 , checksum nel pacchetto : 1940
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 589.755547,  type: 1, fromlayer5  entity: 0
@@ -938,7 +991,7 @@ EVENT time: 590.575274,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 59
 
 EVENT time: 594.807550,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-21 , checksum nel pacchetto : -21/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-134 , checksum nel pacchetto : -134/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 53
@@ -946,11 +999,12 @@ EVENT time: 594.807550,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 600.772698,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :1962 , checksum nel pacchetto : 1962/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :1962 , checksum nel pacchetto : 1962
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 606.545305,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :53 , checksum nel pacchetto : 53/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-60 , checksum nel pacchetto : -60/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 54
@@ -968,11 +1022,12 @@ EVENT time: 610.771813,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 613.215247,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :1980 , checksum nel pacchetto : 1980/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :1980 , checksum nel pacchetto : 1980
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 615.812159,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :51 , checksum nel pacchetto : 51/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-62 , checksum nel pacchetto : -62/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 55
@@ -985,11 +1040,12 @@ EVENT time: 620.548723,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 621.582293,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2002 , checksum nel pacchetto : 2002/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2002 , checksum nel pacchetto : 2002
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 629.462966,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-13 , checksum nel pacchetto : -13/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-126 , checksum nel pacchetto : -126/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 56
@@ -997,11 +1053,12 @@ EVENT time: 629.462966,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 631.692923,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2020 , checksum nel pacchetto : 2020/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2020 , checksum nel pacchetto : 2020
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 635.891690,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :69 , checksum nel pacchetto : 69/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-44 , checksum nel pacchetto : -44/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 57
@@ -1029,11 +1086,12 @@ EVENT time: 641.144444,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 641.720328,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2042 , checksum nel pacchetto : 2042/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2042 , checksum nel pacchetto : 2042
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 646.475845,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :71 , checksum nel pacchetto : 71/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-42 , checksum nel pacchetto : -42/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 58
@@ -1041,7 +1099,8 @@ EVENT time: 646.475845,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 653.550645,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2060 , checksum nel pacchetto : 2060/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2060 , checksum nel pacchetto : 2060
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 658.061464,  type: 1, fromlayer5  entity: 0
@@ -1050,7 +1109,7 @@ EVENT time: 658.061464,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 67
 
 EVENT time: 663.497085,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :199 , checksum nel pacchetto : 199/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :86 , checksum nel pacchetto : 86/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 59
@@ -1058,11 +1117,12 @@ EVENT time: 663.497085,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 668.283090,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2082 , checksum nel pacchetto : 2082/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2082 , checksum nel pacchetto : 2082
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 675.625141,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :201 , checksum nel pacchetto : 201/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :88 , checksum nel pacchetto : 88/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 60
@@ -1075,11 +1135,12 @@ EVENT time: 677.924131,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 684.336680,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2100 , checksum nel pacchetto : 2100/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2100 , checksum nel pacchetto : 2100
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 686.035432,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :196 , checksum nel pacchetto : 196/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :83 , checksum nel pacchetto : 83/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 61
@@ -1087,7 +1148,8 @@ EVENT time: 686.035432,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 689.574999,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2122 , checksum nel pacchetto : 2122/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2122 , checksum nel pacchetto : 2122
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 693.755303,  type: 1, fromlayer5  entity: 0
@@ -1096,7 +1158,7 @@ EVENT time: 693.755303,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 69
 
 EVENT time: 698.717490,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :74 , checksum nel pacchetto : 74/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-39 , checksum nel pacchetto : -39/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 62
@@ -1104,11 +1166,12 @@ EVENT time: 698.717490,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 708.040437,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2140 , checksum nel pacchetto : 2140/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2140 , checksum nel pacchetto : 2140
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 710.278909,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :72 , checksum nel pacchetto : 72/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-41 , checksum nel pacchetto : -41/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 63
@@ -1121,11 +1184,12 @@ EVENT time: 711.638539,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 712.430311,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2162 , checksum nel pacchetto : 2162/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2162 , checksum nel pacchetto : 2162
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 715.599628,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-25 , checksum nel pacchetto : -25/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-138 , checksum nel pacchetto : -138/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 64
@@ -1133,11 +1197,12 @@ EVENT time: 715.599628,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 717.808161,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2180 , checksum nel pacchetto : 2180/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2180 , checksum nel pacchetto : 2180
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 725.331767,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :202 , checksum nel pacchetto : 202/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :89 , checksum nel pacchetto : 89/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 65
@@ -1155,11 +1220,12 @@ EVENT time: 728.702048,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 734.795892,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2202 , checksum nel pacchetto : 2202/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2202 , checksum nel pacchetto : 2202
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 741.974517,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :204 , checksum nel pacchetto : 204/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :91 , checksum nel pacchetto : 91/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 66
@@ -1172,11 +1238,12 @@ EVENT time: 746.236763,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 746.641865,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2220 , checksum nel pacchetto : 2220/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2220 , checksum nel pacchetto : 2220
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 751.908261,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :72 , checksum nel pacchetto : 72/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-41 , checksum nel pacchetto : -41/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 67
@@ -1184,7 +1251,8 @@ EVENT time: 751.908261,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 755.181402,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2242 , checksum nel pacchetto : 2242/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2242 , checksum nel pacchetto : 2242
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 762.760094,  type: 1, fromlayer5  entity: 0
@@ -1193,7 +1261,7 @@ EVENT time: 762.760094,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 74
 
 EVENT time: 764.329936,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :126 , checksum nel pacchetto : 126/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :13 , checksum nel pacchetto : 13/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 68
@@ -1201,7 +1269,8 @@ EVENT time: 764.329936,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 766.247597,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2260 , checksum nel pacchetto : 2260/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2260 , checksum nel pacchetto : 2260
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 767.850581,  type: 1, fromlayer5  entity: 0
@@ -1210,7 +1279,7 @@ EVENT time: 767.850581,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 75
 
 EVENT time: 773.806360,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :124 , checksum nel pacchetto : 124/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :11 , checksum nel pacchetto : 11/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 69
@@ -1223,11 +1292,12 @@ EVENT time: 776.212653,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 782.201209,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2282 , checksum nel pacchetto : 2282/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2282 , checksum nel pacchetto : 2282
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 783.679128,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :29 , checksum nel pacchetto : 29/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-84 , checksum nel pacchetto : -84/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 70
@@ -1240,11 +1310,12 @@ EVENT time: 784.072390,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 786.827296,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2300 , checksum nel pacchetto : 2300/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2300 , checksum nel pacchetto : 2300
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 789.584613,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :124 , checksum nel pacchetto : 124/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :11 , checksum nel pacchetto : 11/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 71
@@ -1257,11 +1328,12 @@ EVENT time: 794.224677,  type: 1, fromlayer5  entity: 0
 
 EVENT time: 795.058931,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2322 , checksum nel pacchetto : 2322/n numero di sequenza: 1, numero di sequenza atteso: 1
+[B_input] checksum calcolato :2322 , checksum nel pacchetto : 2322
+[B_input] numero di sequenza: 1, numero di sequenza atteso: 1
 [B_input] spedisce ACK corretto
 
 EVENT time: 801.928282,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :47 , checksum nel pacchetto : 47/n numero di ack 1, numero di ackatteso: 1
+[A_input] checksum calcolato :-66 , checksum nel pacchetto : -66/n numero di ack 1, numero di ackatteso: 1
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 72
@@ -1269,11 +1341,12 @@ EVENT time: 801.928282,  type: 2, fromlayer3  entity: 0
 
 EVENT time: 803.222999,  type: 2, fromlayer3  entity: 1
 [B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2340 , checksum nel pacchetto : 2340/n numero di sequenza: 0, numero di sequenza atteso: 0
+[B_input] checksum calcolato :2340 , checksum nel pacchetto : 2340
+[B_input] numero di sequenza: 0, numero di sequenza atteso: 0
 [B_input] spedisce ACK corretto
 
 EVENT time: 809.579272,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :78 , checksum nel pacchetto : 78/n numero di ack 0, numero di ackatteso: 0
+[A_input] checksum calcolato :-35 , checksum nel pacchetto : -35/n numero di ack 0, numero di ackatteso: 0
 [A_input] A riceve ACK corretto
 [A_input] A ha ancora dei messaggi in lista di attesa
 [A_input] invia il pacchetto n: 73
@@ -1285,156 +1358,5 @@ EVENT time: 811.490829,  type: 1, fromlayer5  entity: 0
 [insertMessage] message number 79
 
 EVENT time: 812.831812,  type: 1, fromlayer5  entity: 0
-[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
-[insertMessage] inserimento di un nuovo messaggio nella lista dei messaggi
-[insertMessage] message number 80
-
-EVENT time: 818.455885,  type: 2, fromlayer3  entity: 1
-[B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2362 , checksum nel pacchetto : 2362/n numero di sequenza: 1, numero di sequenza atteso: 1
-[B_input] spedisce ACK corretto
-
-EVENT time: 821.819941,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :80 , checksum nel pacchetto : 80/n numero di ack 1, numero di ackatteso: 1
-[A_input] A riceve ACK corretto
-[A_input] A ha ancora dei messaggi in lista di attesa
-[A_input] invia il pacchetto n: 74
-[A_input] numero di sequenza : 0
-
-EVENT time: 823.453047,  type: 2, fromlayer3  entity: 1
-[B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2380 , checksum nel pacchetto : 2380/n numero di sequenza: 0, numero di sequenza atteso: 0
-[B_input] spedisce ACK corretto
-
-EVENT time: 825.863216,  type: 1, fromlayer5  entity: 0
-[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
-[insertMessage] inserimento di un nuovo messaggio nella lista dei messaggi
-[insertMessage] message number 81
-
-EVENT time: 829.615162,  type: 1, fromlayer5  entity: 0
-[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
-[insertMessage] inserimento di un nuovo messaggio nella lista dei messaggi
-[insertMessage] message number 82
-
-EVENT time: 831.509781,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :112 , checksum nel pacchetto : 112/n numero di ack 0, numero di ackatteso: 0
-[A_input] A riceve ACK corretto
-[A_input] A ha ancora dei messaggi in lista di attesa
-[A_input] invia il pacchetto n: 75
-[A_input] numero di sequenza : 1
-
-EVENT time: 837.466964,  type: 1, fromlayer5  entity: 0
-[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
-[insertMessage] inserimento di un nuovo messaggio nella lista dei messaggi
-[insertMessage] message number 83
-
-EVENT time: 840.017518,  type: 2, fromlayer3  entity: 1
-[B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2402 , checksum nel pacchetto : 2402/n numero di sequenza: 1, numero di sequenza atteso: 1
-[B_input] spedisce ACK corretto
-
-EVENT time: 842.521592,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :192 , checksum nel pacchetto : 192/n numero di ack 1, numero di ackatteso: 1
-[A_input] A riceve ACK corretto
-[A_input] A ha ancora dei messaggi in lista di attesa
-[A_input] invia il pacchetto n: 76
-[A_input] numero di sequenza : 0
-
-EVENT time: 849.215369,  type: 1, fromlayer5  entity: 0
-[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
-[insertMessage] inserimento di un nuovo messaggio nella lista dei messaggi
-[insertMessage] message number 84
-
-EVENT time: 852.308176,  type: 2, fromlayer3  entity: 1
-[B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2420 , checksum nel pacchetto : 2420/n numero di sequenza: 0, numero di sequenza atteso: 0
-[B_input] spedisce ACK corretto
-
-EVENT time: 856.065279,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :112 , checksum nel pacchetto : 112/n numero di ack 0, numero di ackatteso: 0
-[A_input] A riceve ACK corretto
-[A_input] A ha ancora dei messaggi in lista di attesa
-[A_input] invia il pacchetto n: 77
-[A_input] numero di sequenza : 1
-
-EVENT time: 861.969451,  type: 2, fromlayer3  entity: 1
-[B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2442 , checksum nel pacchetto : 2442/n numero di sequenza: 1, numero di sequenza atteso: 1
-[B_input] spedisce ACK corretto
-
-EVENT time: 868.172246,  type: 1, fromlayer5  entity: 0
-[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
-[insertMessage] inserimento di un nuovo messaggio nella lista dei messaggi
-[insertMessage] message number 85
-
-EVENT time: 870.052828,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :83 , checksum nel pacchetto : 83/n numero di ack 1, numero di ackatteso: 1
-[A_input] A riceve ACK corretto
-[A_input] A ha ancora dei messaggi in lista di attesa
-[A_input] invia il pacchetto n: 78
-[A_input] numero di sequenza : 0
-
-EVENT time: 879.289529,  type: 2, fromlayer3  entity: 1
-[B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :1940 , checksum nel pacchetto : 1940/n numero di sequenza: 0, numero di sequenza atteso: 0
-[B_input] spedisce ACK corretto
-
-EVENT time: 879.824824,  type: 1, fromlayer5  entity: 0
-[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
-[insertMessage] inserimento di un nuovo messaggio nella lista dei messaggi
-[insertMessage] message number 86
-
-EVENT time: 887.975799,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :81 , checksum nel pacchetto : 81/n numero di ack 0, numero di ackatteso: 0
-[A_input] A riceve ACK corretto
-[A_input] A ha ancora dei messaggi in lista di attesa
-[A_input] invia il pacchetto n: 79
-[A_input] numero di sequenza : 1
-
-EVENT time: 889.297769,  type: 1, fromlayer5  entity: 0
-[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
-[insertMessage] inserimento di un nuovo messaggio nella lista dei messaggi
-[insertMessage] message number 87
-
-EVENT time: 889.417188,  type: 2, fromlayer3  entity: 1
-[B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :1962 , checksum nel pacchetto : 1962/n numero di sequenza: 1, numero di sequenza atteso: 1
-[B_input] spedisce ACK corretto
-
-EVENT time: 890.876431,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :-13 , checksum nel pacchetto : -13/n numero di ack 1, numero di ackatteso: 1
-[A_input] A riceve ACK corretto
-[A_input] A ha ancora dei messaggi in lista di attesa
-[A_input] invia il pacchetto n: 80
-[A_input] numero di sequenza : 0
-
-EVENT time: 898.812311,  type: 2, fromlayer3  entity: 1
-[B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :1980 , checksum nel pacchetto : 1980/n numero di sequenza: 0, numero di sequenza atteso: 0
-[B_input] spedisce ACK corretto
-
-EVENT time: 905.198248,  type: 2, fromlayer3  entity: 0
-[A_input] checksum calcolato :3 , checksum nel pacchetto : 3/n numero di ack 0, numero di ackatteso: 0
-[A_input] A riceve ACK corretto
-[A_input] A ha ancora dei messaggi in lista di attesa
-[A_input] invia il pacchetto n: 81
-[A_input] numero di sequenza : 1
-
-EVENT time: 908.880886,  type: 1, fromlayer5  entity: 0
-[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
-[insertMessage] inserimento di un nuovo messaggio nella lista dei messaggi
-[insertMessage] message number 88
-
-EVENT time: 911.023286,  type: 1, fromlayer5  entity: 0
-[A_output] al momento non può inviare il pacchetto e lo mette in lista di attesa
-[insertMessage] inserimento di un nuovo messaggio nella lista dei messaggi
-[insertMessage] message number 89
-
-EVENT time: 915.195776,  type: 2, fromlayer3  entity: 1
-[B_input] B riceve pacchetto da A
-[B_input] checksum calcolato :2002 , checksum nel pacchetto : 2002/n numero di sequenza: 1, numero di sequenza atteso: 1
-[B_input] spedisce ACK corretto
-
-EVENT time: 919.598987,  type: 1, fromlayer5  entity: 0
-Message correctly transfered: 82
-Simulator terminated at time 919.598986785485
+Message correctly transfered: 73
+Simulator terminated at time 812.831812494277

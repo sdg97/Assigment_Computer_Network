@@ -52,6 +52,7 @@ int pktnumb;
 int currentSeqNumb;
 int currentAckNumb;
 int sequenceNumberWaitedFromB;
+int messageTransferedCorrectly;
 struct pkt * currentPacket;
 
 /* Please use the following values in your program */
@@ -241,14 +242,17 @@ B_input (packet)
 {
 	struct pkt * p = (struct pkt *)malloc(sizeof(struct pkt));
 	printf("[B_input] B riceve pacchetto da A\n");
-	printf("[B_input] checksum calcolato :%d , checksum nel pacchetto : %d/n numero di sequenza: %d, numero di sequenza atteso: %d\n",make_checksum(&packet), packet.checksum, packet.seqnum, sequenceNumberWaitedFromB);
-	if(packet.checksum != make_checksum(&packet) || packet.seqnum!= sequenceNumberWaitedFromB){
+	printf("[B_input] checksum calcolato :%d , checksum nel pacchetto : %d\n",make_checksum(&packet), packet.checksum);
+  printf("[B_input] numero di sequenza: %d, numero di sequenza atteso: %d\n", packet.seqnum, sequenceNumberWaitedFromB);
+
+  if(packet.checksum != make_checksum(&packet) || packet.seqnum!= sequenceNumberWaitedFromB){
 		p->seqnum = sequenceNumberWaitedFromB;
 		p->acknum = sequenceNumberWaitedFromB == 0 ? 1 : 0;
 		p->checksum = 0;
 		p->checksum = make_checksum(p);
 		printf("[B_input] spedisce NAK\n");
   } else {
+    messageTransferedCorrectly++;
 	  p->seqnum = sequenceNumberWaitedFromB;
 	  p->acknum = sequenceNumberWaitedFromB;
 	  p->checksum = 0;
@@ -390,6 +394,7 @@ main(int argc, char **argv)
     free(eventptr);
   }
   terminate:
+    printf("Message correctly transfered: %d\n", messageTransferedCorrectly);
     printf("Simulator terminated at time %.12f\n",time_now);
     return (0);
 }
