@@ -1,5 +1,10 @@
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
+\usepackage{listings}
+\lstset{
+ basicstyle=\ttfamily
+}
+\usepackage{verbatim}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
 \usepackage{lipsum}
@@ -8,6 +13,7 @@
 \title{Programmazione di reti - Relazione Assigment 2}
 \begin{document}
 \maketitle
+
 \tableofcontents
 
 \section{Descrizione Simulatore}
@@ -72,6 +78,9 @@ Macchine a stati finiti per la descrizione del comportamento dell'entità A e de
  \newpage
 
 \section{Test e Relativo output}
-L'output dei due test richiesti si trovano nella cartella della relazione rispettivamente con i nomi \emph{outputCase1Assignment2} e \emph{outputCase2Assignment2}. Su in ambiente Windows è possibile visualizzarli con impaginazione corretta con \emph{Notepad}. Con Linux in particolare Ubuntu si visualizzano correttamente utilizzando il blocco note. In generale si possono aprire e visualizzare correttamente con \emph{Atom}.
+\subsection{Case 1}
+\verbatiminput{OutputCase1.txt}
+\subsection{Case 2}
+\verbatiminput{OutputCase2.txt}
 
 \end{document}

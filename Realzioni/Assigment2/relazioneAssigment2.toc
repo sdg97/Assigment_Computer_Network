@@ -1,0 +1,10 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Descrizione Simulatore}{1}
+\contentsline {section}{\numberline {2}Strategie Risolutive}{2}
+\contentsline {subsection}{\numberline {2.1}Strutture Dati}{2}
+\contentsline {subsection}{\numberline {2.2}Descrizione delle Routine}{3}
+\contentsline {subsection}{\numberline {2.3}Diagrammi a stati finiti}{3}
+\contentsline {section}{\numberline {3}Test e Relativo output}{4}
+\contentsline {subsection}{\numberline {3.1}Case 1}{4}
+\contentsline {subsection}{\numberline {3.2}Case 2}{33}
